@@ -1,18 +1,21 @@
-[package]
+[workspace]
+members = [
+"templates/axum-tera-bulma",
+]
+resolver = "2"
+
+[workspace.package]
 name = "axumkit"
-version = "1.3.0"
+version = "2.0.0"
 authors = ["Daiki Nakashima"]
 edition = "2024"
 
-[dependencies]
-axum = { version = "0.8.1", features = ["macros"] }
-tokio = { version = "1.43.0", features = ['full']}
-hyper = { version = "1.6.0", features = ['full']}
-tower = { version = "0.5.2", features = ['full']}
+[workspace.dependencies]
+axum = { default-features = false, version = "0.8.4" }
+tokio = { default-features = false, version = "1.45.1" }
+hyper = { default-features = false, version = "1.6.0" }
+tower = { default-features = false, version = "0.5.2" }
 axum-template = "3.0.0"
 tera = "1.20.0"
 axum-macros = "0.5.0"
-
-[dev-dependencies]
-reqwest = { version = "0.12.12", features = ["json"] }
-tokio = { version = "1.43.0", features = ["full"] }
+reqwest = { default-features = false, version = "0.12.20" }
