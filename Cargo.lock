@@ -131,6 +131,7 @@ dependencies = [
  "axum",
  "axum-macros",
  "axum-template",
+ "http-body-util",
  "hyper",
  "reqwest",
  "tera",

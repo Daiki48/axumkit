@@ -19,3 +19,4 @@ axum-template = "3.0.0"
 tera = "1.20.0"
 axum-macros = "0.5.0"
 reqwest = { default-features = false, version = "0.12.20" }
+http-body-util = "0.1.3"

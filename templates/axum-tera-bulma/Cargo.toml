@@ -12,6 +12,7 @@ tower = { workspace = true, features = ['full']}
 axum-template.workspace = true
 tera.workspace = true
 axum-macros.workspace = true
+http-body-util.workspace = true
 
 [dev-dependencies]
 reqwest = { workspace = true, features = ["json"] }
